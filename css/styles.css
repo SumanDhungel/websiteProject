@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Lato;
+    src: url("fonts/Lato-Regular.ttf") format("truetype");
+}
+
+html {
+    font-family: Lato, Verdana, Arial, sans-serif;
+}
+
+body {
+    /*background-color: #404040;*/
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+}
+
+.company {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cfcbc6;
+}
+
+.logo {
+    /*min-width: 75px;*/
+    /*background-color: #e0dcd9;*/
+    /*width: 12%;*/
+}
+
+.logo img {
+    width: 134px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    /*text-decoration: none; wcag violation*/
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: blanchedalmond;
+}
+
+
+/* Css for home page */
+
+main {
+    justify-items: center;
+}
+
+.company_intro {
+    justify-items: center;
+    width: 80%;
+}
+
+.company_name {
+    margin-top: 90px;
+}
+
+.company_intro p {
+    text-align: center;
+}
+
+.company_intro img {
+    width: 100%;
+}
+
+
+/* css for products page */
+
+.banner {
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section h2 {
+    width: 100%;
+}
+
+.section h2 {
+    width: 100%;
+}
+
+article {
+    width: 33.33%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+article div {
+    background-color: #d4d4d4;
+    padding: 1rem;
+}
+
+
+figure {
+    margin: 0;
+}
+
+img {
+    /*border-radius: 8px 8px 0 0; */
+    /* border: 1px black solid; */
+    border-radius: 8px;
+    width: 100%;
+    /*height: 270px;*/
+}
+
+article img {
+    border: 1px black solid;
+}
+
+figcaption {
+    opacity: 65%;
+    font-style: italic;
+    /* padding: 1rem; */
+}
+
+/* css for contacts page*/
+
+.contacts {
+    width: 100%;
+    display: flex;
+}
+
+.contact_title {
+    float: left;
+}
+
+.contact_info {
+    font-style: italic;
+    width: 40%;
+}
+
+
+.map_box {
+    width: 60%;
+    padding: 0 36px;
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: unset;
+
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    article {
+        width: 100%;
+    }
+
+
+    /* .contact_info{
+        width: 100%;
+    } */
+    .contacts {
+        flex-direction: column;
+    }
+
+    .map_box {
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+    }
+}
